@@ -3,6 +3,7 @@ import FormComponent from './components/FormComponent';
 import DrinksList from './components/DrinksList';
 import { BeverageProvider } from './context/BeveragesProvider';
 import { CategoriesProvider } from './context/CategoriesProvider';
+import { ModalDrink } from './components/ModalDrink';
 
 function App() {
   return (
@@ -14,6 +15,8 @@ function App() {
         <Container className="mt-5">
           <FormComponent />
           <DrinksList />
+
+          <ModalDrink />
         </Container>
       </BeverageProvider>
     </CategoriesProvider>
